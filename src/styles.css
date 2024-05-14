@@ -1,0 +1,104 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+body ul,
+body ul li,
+p,
+ul li a,
+form,
+label,
+button,
+nav.navbar.navbar-expand-lg.navbar-light,
+a.navbar-brand.logo,
+a.nav-link,
+.navbar-light .navbar-nav .nav-link {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  min-height: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.upload_btn_wrapper input::file-selector-button,
+.profile-content-wrapper input#profile-pic::file-selector-button {
+  width: 100%;
+  height: 100%;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+html body {
+  font-family: 'Nunito';
+  box-sizing: border-box;
+  min-height: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+}
+
+:focus,
+.btn-light.focus,
+.btn-light:focus,
+.bootstrap-select .dropdown-toggle:focus,
+select.goog-te-combo {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+/* ------RESET CSS END------- */
+:root {
+  --primary-color: #014CC4;
+  --secondary-color: #68C721;
+  --warning-color: #C40101;
+  --white-color: #fff;
+  --dark-color: #000;
+  --disabled-color: #CDCFD6;
+  --main-bg: #fff;
+  --card-bg: #EFEFEF;
+  --bg-light-green: #f0f9e9;
+  --bg-light-red: #f9e6e6;
+  --heading-color: #1B1B1B;
+  --paragraph-color: #787878;
+  --card-border-color: #F1F1F1;
+  --Border-color: #CDCFD6;
+  --card-head-light-blue: #f5fcff;
+  --card-head-light-green: #f5fcf5;
+  --tabs-color: #8391A1;
+  --batch-upcoming-bg: #E6EEFA;
+    background-color: #fff;
+  --common-anchor: #014CC4;
+  --background-light-dark: #fff;
+  --login-wrap-main: #014CC4;
+  --login-wrap-form: #fff;
+  --discount-color: #5F8CD4;
+  --input-border: #68C721;
+}
