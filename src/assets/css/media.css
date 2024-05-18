@@ -7,7 +7,20 @@
 }
 
 @media only screen and (max-width: 1024px) {
-
+    /* .main-header .primary-btn {
+        margin-left: 0px !important;
+    }
+    .mega-left{
+        display: none;
+    }
+    .dropdown-menu{
+        width: auto !important;
+    }
+    .mega-menu .dropdown-menu{
+        position: absolute;
+        left: -50%;
+        right: -50%;
+      } */
 }
 @media only screen and (max-width: 991.99px) {
 

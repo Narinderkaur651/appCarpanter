@@ -56,7 +56,7 @@ img {
 }
 
 html body {
-  font-family: 'Nunito';
+  font-family: 'League Spartan';
   box-sizing: border-box;
   min-height: 100%;
   -webkit-appearance: none;
@@ -76,29 +76,87 @@ select.goog-te-combo {
 
 /* ------RESET CSS END------- */
 :root {
-  --primary-color: #014CC4;
-  --secondary-color: #68C721;
+  --primary-color: #54372A;
+  --secondary-color: #0D0D0D;
   --warning-color: #C40101;
   --white-color: #fff;
-  --dark-color: #000;
-  --disabled-color: #CDCFD6;
-  --main-bg: #fff;
-  --card-bg: #EFEFEF;
-  --bg-light-green: #f0f9e9;
-  --bg-light-red: #f9e6e6;
-  --heading-color: #1B1B1B;
+  --heading-color: #000;
   --paragraph-color: #787878;
-  --card-border-color: #F1F1F1;
-  --Border-color: #CDCFD6;
-  --card-head-light-blue: #f5fcff;
-  --card-head-light-green: #f5fcf5;
-  --tabs-color: #8391A1;
-  --batch-upcoming-bg: #E6EEFA;
-    background-color: #fff;
-  --common-anchor: #014CC4;
-  --background-light-dark: #fff;
-  --login-wrap-main: #014CC4;
-  --login-wrap-form: #fff;
-  --discount-color: #5F8CD4;
-  --input-border: #68C721;
+}
+
+.theme-btn {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  font-size: 16px;
+  padding: 14px 18px;
+  display: inline-block;
+  transition: .4s all ease-in;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.primary-btn {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  letter-spacing: 2px;
+}
+.white-btn {
+  background-color:#fff;
+  border: 1px solid var(--primary-color);
+  color:#111 ;
+  font-weight: 700;
+}
+.primary-btn:hover {
+  background-color: var(--white-color);
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.section-p {
+  padding: 80px 20px;
+}
+.heading2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+.heading3 {
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+.heading4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+
+.section-head > span {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 18px;
+  color: var(--primary-color);
+  position: relative;
+  letter-spacing: 2px;
+}
+.section-head > span::after {
+  content: url(../src/assets/images/traiangle-icon.svg);
+  position: absolute;
+  right: -37px;
+  bottom: -16px;
+}
+
+.section-head h2 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 18px;
+}
+.common-p{
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 0;
 }

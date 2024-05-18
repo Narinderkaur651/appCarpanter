@@ -1,0 +1,240 @@
+.home-banner {
+    background-image: url(/assets/images/herobanner.png);
+    background-size: cover;
+    height: calc(100vh - 80px);
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+}
+
+.banner-content .empower-text {
+    font-size: 24px;
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+
+.banner-content {
+    text-align: center;
+    width: 100%;
+}
+
+.banner-content h1 {
+    font-size: 78px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 13px 0;
+    letter-spacing: 2px;
+}
+
+.banner-content h1 span {
+    color: #9d6a4a;
+}
+
+.banner-content p {
+    font-size: 32px;
+    color: var(--white-color);
+}
+
+.banner-content .primary-btn {
+    padding: 18px 32px;
+    color: var(--primary-color);
+    background-color: #debe88;
+    font-weight: 700;
+    margin-top: 30px;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+.banner-content .primary-btn:hover{
+    background-color: var(--white-color);
+
+}
+.bg-gradient-cmn{
+    background-image: url(../../assets/images/gradient-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*--banner-end--*/
+.bg-light-color {
+    background-color: var(--primary-color);
+}
+.bg-dark-color{
+    background-color: var( --secondary-color);
+}
+.service-list {
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    text-align: center;
+}
+.service-list h3{
+    text-align: center;
+}
+/*--about-end--*/
+.service-box{
+    box-shadow: 0 0 6px 2px #dcdcdc;
+    padding: 28px 18px 58px 18px;
+    border-radius: 4px;
+}
+
+.service-box span img{
+max-width: 60px;
+}
+.service-box h3{
+    padding: 32px 0 7px 0;
+}
+/*--service-end--*/
+.choose-right{
+    background-image: url(../../assets/images/shadow.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.choose-left h2{
+    font-size: 40px;
+}
+.choose-left .primary-btn{
+    padding: 17px 48px;
+}
+.choose-left p{
+    font-size: 26px;
+    padding: 18px 0 36px 0;
+    margin: 0;
+    font-weight: 300;
+}
+.choose-right p{
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    font-weight: 500;
+}
+.choose-right{
+    padding: 67px 34px;
+    background-color: rgb(104 104 104 / 20%);
+    backdrop-filter: blur(10px);
+    border: 2px solid #686868;
+}
+.choose-right h1{
+font-size: 60px;
+text-transform: uppercase;
+color: #fff;
+}
+.why-choose {
+    padding: 150px 20px;
+}
+/*--choose-us-end--*/
+.testimonals-wrap{
+    font-size: 18px;
+    color: #000;
+    line-height: 1.5;
+}
+.quote-div{
+    padding: 20px 0;
+   
+}
+.client-img{
+    width: 74px;
+    min-width: 74px;
+    height: 74px;
+    border-radius: 100%;
+    display: inline-block;
+}
+.client-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+}
+.client-name{
+    padding: 0 10px;
+    border-left: 2px solid #9D6A4A;
+}
+/*--lets-setup--*/
+.address-ul{
+    display: flex;
+    gap: 36px;
+    align-items: center;
+    margin-top: 34px;
+}
+.address-ul li{
+display: flex;
+gap: 12px;
+align-items: center;
+color: #fff;
+font-size: 16px;
+}
+.setUp-wrap .section-head > span{
+    font-size: 36px;
+}
+.project-form{
+    background-color: #fff;
+    padding: 29px;
+}
+/*--custom-form--*/
+.project-form .custom-input{
+    border: 0;
+  border-bottom: 1px solid #967866;
+  border-radius: 0;
+  height: 20px;
+  }
+  .project-form .custom-label{
+    color: #0D0D0D;
+    font-size: 18px;
+    margin: 0;
+  }
+  .input-wrap{
+    margin-bottom: 24px;
+  }
+  .project-form .primary-btn{
+    padding: 15px 33px;
+    letter-spacing: 2px;
+    background-color: #967866;
+    border: 0;
+  }
+  .setUp-wrap .section-head{
+    max-width: 80%;
+  }
+  .file-input label{
+    border: 2px dotted #967866 ;
+    padding: 12px;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    gap: 17px;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  .file-input input{
+    display: none;
+  }
+  /*--contact-bannre--*/
+  .contact-banner{
+    background-image: url(../../assets/images/contact-bg.png);
+    background-repeat: no-repeat;
+  background-size: cover;
+}
+.contact-banner h1{
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+.contact-banner .primary-btn{
+    padding: 16px 62px;
+}
+@media only screen and (max-width: 767px) {
+    .banner-content .empower-text {
+        font-size: 20px;
+    }
+    .banner-content h1{
+        font-size: 56px;
+        padding: 7px 0;
+    }
+    .banner-content p{
+        font-size: 28px;
+    }
+    .banner-content  .primary-btn {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+}

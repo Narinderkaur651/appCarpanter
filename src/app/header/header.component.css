@@ -1,0 +1,273 @@
+.main-header .navbar-nav {
+    gap: 30px;
+}
+
+.main-header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: transparent;
+    transition: background-color .3s linear;
+    background-color: #0d0d0d;
+    padding: 15px;
+
+}
+
+.navbar-brand img {
+    max-width: 100px;
+}
+/* .nav-item{
+    position: relative;
+}
+.nav-item.active::after{
+    content: url(../../assets/images/top-border.svg);
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    right: 0;
+    transition: border 0.3s ease;
+} */
+.main-header .navbar-nav .nav-link {
+    position: relative;
+
+}
+
+.main-header .navbar-nav .nav-link.active,
+.main-header .navbar-nav .show>.nav-link ,li.nav-item.dropdown.active .nav-link{
+    color: #fff;
+    font-weight: 600;
+    -webkit-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+.main-header .navbar-nav .nav-link.active::before,
+.main-header .navbar-nav .show>.nav-link::before,li.nav-item.dropdown.active .nav-link::before {
+    content: url(../../assets/images/top-border.svg);
+    position: absolute;
+    margin: auto;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    bottom: -40px;
+    -webkit-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+.main-header .primary-btn {
+    margin-left: 120px;
+}
+.main-header .primary-btn svg{
+    fill: var(--white-color);
+    transition: .4s all ease-in;
+}
+.main-header .primary-btn:hover svg{
+    fill: var(--primary-color);
+}
+.scrolled {
+    position: sticky;
+    background-color: #0d0d0ddb;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    transition: background-color .3s linear;
+}
+
+.scrolled .nav-notifications img {
+    filter: brightness(0);
+}
+
+.main-header .navbar-toggler {
+    background-color: white;
+
+}
+
+.navbar-toggler-icon {
+    width: 1em;
+    height: 1.2em;
+}
+
+.main-header .nav-link {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--white-color);
+}
+
+
+
+/* CSS to make the dropdown menu appear on hover */
+/* .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 28px;
+} */
+
+
+
+/* Ensure the dropdown menu spans the full width */
+.dropdown-menu {
+    margin-top: 28px;
+    padding: 0 !important;
+    width: 1024px !important;
+    position: absolute !important;
+    /* display: none; */
+    /* Hidden by default */
+    width: 100vw;
+    /* Full viewport width */
+    left: -272px;
+    top: 100%;
+    /* Position right below the navbar */
+    /* margin: 0; */
+    border-top: 0;
+    /* Remove the border top if it exists */
+    padding: 0;
+    /* Optional: Remove padding if needed */
+    z-index: 1000;
+    /* Ensure it appears above other content */
+}
+
+.dropdown-header {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.dropdown-item {
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-item img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.dropdown-menu {
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.dropdown-item {
+    padding: 10px 20px;
+    color: #343a40;
+}
+
+.dropdown-item:hover {
+    background-color: #e9ecef;
+}
+
+.dropdown-header {
+    font-size: 1.5rem;
+    color: #007bff;
+    /* Blue header color */
+}
+
+.mega-left{
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 14px 34px;
+    text-align: left;
+    height: 100%;
+}
+.mega-left .white-btn{
+    margin-top: 36px;
+}
+.mega-left h2{
+    text-transform: uppercase;
+    font-size: 28px;
+    margin: 9px 0 18px 0;
+}
+.mega-right h4{
+    font-size: 18px;
+}
+.mega-right p{
+    font-size: 14px;
+}
+.mega-right{
+    background-color: #313131;
+    height: 100%;
+}
+.mega-right .mega-icon{
+    display: inline-block;
+    width: 40px;
+}
+.mega-right li a{
+    display: flex;
+    /* padding: 0 20px; */
+    gap: 15px;
+    color: #fff;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+.mega-right li:last-child a{
+    margin-bottom: 0;
+}
+@media only screen and (max-width: 1024px) {
+    .main-header .primary-btn {
+        margin-left: 0px !important;
+    }
+  
+}
+@media only screen and (max-width: 991.99px) {
+    .mega-left{
+        display: none;
+    }
+    .dropdown-menu{
+        width: 500px !important;
+    }
+    .mega-menu .dropdown-menu{
+        /* position: absolute;
+        left: -50%;
+        right: -50%; */
+        position: static !important;
+      }
+      .main-header  .navbar-nav  .nav-link {
+        text-align: center;
+    }
+    .main-header .navbar-collapse {
+        background: var(--primary-color);
+        padding: 20px;
+        margin-top: 10px;
+        border-radius: 8px;
+        border: 1px solid #fff;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    .navbar-brand img {
+        max-width: 50px;
+    }
+    .dropdown-menu{
+        width: 300px !important;
+    }
+    .mega-right li a {
+        gap: 10px !important;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+
+    .navbar-brand img {
+        max-width: 150px;
+    }
+    .dropdown-menu{
+        width: 250px !important;
+    }
+
+
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
